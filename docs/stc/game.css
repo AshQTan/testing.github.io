@@ -1,5 +1,6 @@
 @font-face{ 
     font-family: Helvetica, sans-serif;
+    color: white;
 /*    src: url('/stc/third-party/Coiny-Regular.ttf');
 */}
 
@@ -12,6 +13,7 @@ body {
     height: 100%;
     overflow: hidden;
     background-color: #595959;
+    color: white;
     -webkit-touch-callout: none;
     -webkit-text-size-adjust: none;
     -webkit-user-select: none;
@@ -42,6 +44,7 @@ div.help {
     border-radius: 40px;
     padding: 30px 10px 30px 10px;
     text-align: left;
+    color: white;
 }
 
 #board {
