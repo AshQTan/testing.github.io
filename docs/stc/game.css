@@ -11,6 +11,7 @@
 body {
     height: 100%;
     overflow: hidden;
+    background-color: #595959;
     -webkit-touch-callout: none;
     -webkit-text-size-adjust: none;
     -webkit-user-select: none;
@@ -99,7 +100,8 @@ div.button {
     padding: 5px;
     font-size: 50px;
     border-radius: 12px;
-    background-color: #0dd;
+    background-color: #24ad18;
+    color: white;
     border: solid 1px #044; 
 /*    box-shadow: 5px 5px 0px 0px #066; 
 */    font-family:  Helvetica, sans-serif;
