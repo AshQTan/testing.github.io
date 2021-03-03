@@ -101,10 +101,13 @@ div#buttons div.separator {
 
 div.button {
     height: 70px;
+    display: flex;
+    align-items: center; /* vertical */
+    justify-content: center; /* horizontal */
     text-align: center;
     vertical-align: middle;
     padding: 5px;
-    font-size: 40px;
+    font-size: 30px;
     border-radius: 12px;
     background-color: #24ad18;
     color: white;
