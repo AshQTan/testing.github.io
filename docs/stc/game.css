@@ -54,8 +54,9 @@ div.help {
 
 @media not all and (hover: none) {
     div.playgrid div:hover {
-        background-color: #888;
+        background-color: #bfbfbf;
         opacity: 0.5;
+        border-radius: 10;
     }
 }
 
