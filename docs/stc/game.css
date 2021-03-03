@@ -101,8 +101,8 @@ div.button {
     border-radius: 12px;
     background-color: #0dd;
     border: solid 1px #044; 
-    box-shadow: 5px 5px 0px 0px #066; 
-    font-family:  Helvetica, sans-serif;
+/*    box-shadow: 5px 5px 0px 0px #066; 
+*/    font-family:  Helvetica, sans-serif;
     margin-top: 10px;
     -webkit-tap-highlight-color: #0aa;
     touch-action: manipulation;
@@ -133,22 +133,22 @@ div.playgrid div {
 
 #board div.line {
     background-color: #ee0;
-    box-shadow: 3px 3px 0px 0px #660;
-    z-index: -1;
+/*    box-shadow: 3px 3px 0px 0px #660;
+*/    z-index: -1;
     border-radius: 25px;
     border: solid 1px #880;
 }
 
 #board div.line-match {
     background-color: #0e0;
-    box-shadow: 3px 3px 0px 0px #060;
-    border: solid 1px #080;
+/*    box-shadow: 3px 3px 0px 0px #060;
+*/    border: solid 1px #080;
 }
 
 #board div.line-toolong {
     background-color: #e00;
-    box-shadow: 3px 3px 0px 0px #600;
-    border: solid 1px #800;
+/*    box-shadow: 3px 3px 0px 0px #600;
+*/    border: solid 1px #800;
 }
 
 #board div.blocked {
