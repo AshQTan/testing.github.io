@@ -7,8 +7,10 @@
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
-
+		
 		  gtag('config', 'G-BXX60JV2GJ');
+		  document.addEventListener('click', function (event) {gtag('event', 'click', {'event_category': 'click',
+									    'event_label': 'click','value': 1})}, false);
 		</script>
   <script src="stc/game.js" language="javascript"></script>
   <meta name="viewport" content="user-scalable=no">
