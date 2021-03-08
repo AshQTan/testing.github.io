@@ -1,6 +1,8 @@
 "use strict";
 
 var cellSize = 50;
+var numpoints = 0;
+var numlevels = 0;
 
 class Line {
     constructor(targetLength, r, c) {
@@ -693,6 +695,10 @@ class Game {
                 back();
             } else if (game.grid.check()) {
                 game.incrementStartLevel(game.gameId);
+
+                numlevels = numlevels +1
+                numpoints = numpoints + numlevels*10
+
                 game.startGame(game.gameId.next());
             }
             return false;
