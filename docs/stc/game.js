@@ -698,7 +698,8 @@ class Game {
 
                 numlevels = numlevels +1 // adding point system to game
                 numpoints = numpoints + numlevels*10
-                $('#scorecount').load(document.URL + ' #scorecount>*')
+                $("#scorecount").load(" #scorecount > *");
+                // $('#scorecount').load(document.URL + ' #scorecount>*')
 
                 game.startGame(game.gameId.next());
             }
