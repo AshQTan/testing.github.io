@@ -24,9 +24,11 @@ using std::string;
 #endif
 
 DEFINE_int32(seed, 1, "RNG seed.");
-DEFINE_int32(puzzle_count, 100, "Number of puzzles to generate.");
+DEFINE_int32(puzzle_count, 200, "Number of puzzles to generate.");
 DEFINE_int32(optimize_iterations, 10000,
              "Number of iterations done during optimization.");
+DEFINE_int32(points, 0, "Player point count");
+DEFINE_int32(levels, 0, "Player level count");
 
 DEFINE_string(solve, "",
               "Solve the puzzle defined in this flag.");
