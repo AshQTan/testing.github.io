@@ -119,6 +119,24 @@ div.button {
     touch-action: manipulation;
 }
 
+div.score {
+    height: 70px;
+    display: flex;
+    align-items: center; /* vertical */
+    justify-content: center; /* horizontal */
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 12px;
+    background-color: #3aa8fc;
+    color: white;
+    border: solid 1px #044; 
+/*    box-shadow: 5px 5px 0px 0px #066; 
+*/    font-family:  Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
 div.separator {
     width: 10px;
 }
