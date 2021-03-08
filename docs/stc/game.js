@@ -696,8 +696,9 @@ class Game {
             } else if (game.grid.check()) {
                 game.incrementStartLevel(game.gameId);
 
-                numlevels = numlevels +1
+                numlevels = numlevels +1 // adding point system to game
                 numpoints = numpoints + numlevels*10
+
 
                 game.startGame(game.gameId.next());
             }

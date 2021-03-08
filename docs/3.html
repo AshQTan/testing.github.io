@@ -94,6 +94,16 @@
         document.getElementById('scorecount').innerHTML="Score: "+ numpoints; // Gives you 7 as your answer
       </script>
 
+      <script> 
+        $(document).ready(function(){
+        setInterval(function(){
+              $("#scorecount").load(window.location.href + " #scorecount" );
+        }, 1000);
+        });
+      </script>
+
+
+
       </div>
     </div>
     <div id="error-container" class="fp" style="display: none">
