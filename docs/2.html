@@ -24,6 +24,7 @@
       gtag('config', 'G-JBSLHTK3M6');
     </script>
 
+
     <title>Asphodel </title>
   </head>
   <body onload="javascript:init()">
@@ -107,7 +108,14 @@
       <h1>Asphodel (built from Linjat)</h1>
       <div id="howto" class="button">How to Play</div>
       <div id="tutorial" class="button">Tutorial</div>
-      <div id="easy" class="button">Begin</div>
+      <div id="easy" class="button" onclick="disclaimer()">Begin</div>
+
+        <script>
+          function disclaimer() {
+          window.confirm("Disclaimer: For each level of this game that you complete, you will earn a certain number of points.  This point system is designed to motivate you to play the game longer and increase engagement.");
+        }
+        </script>
+
 <!--       <div id="medium" class="button">Medium</div>
       <div id="hard" class="button">Hard</div>
       <div id="expert" class="button">Expert</div> -->
