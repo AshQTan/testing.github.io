@@ -22,7 +22,7 @@
 		  gtag('js', new Date());
 		
       subjectID = Math.floor(100000 + Math.random() * 900000);
-      gtag('set', ('user_id':subjectID.toString()));
+      gtag('set', {'user_id':subjectID.toString()});
       
 		  gtag('config', 'G-53ZQNZ2NQK');
 		  document.addEventListener('click', function (event) {gtag('event', 'click_track', {'event_category': 'click_track',
