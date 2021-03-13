@@ -8,6 +8,11 @@
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
 		
+
+      subjectID = Math.floor(100000 + Math.random() * 900000)
+      gtag('set', ('user_id':subjectID))
+      
+      
 		  gtag('config', 'UA-191424809-1');
 		  document.addEventListener('click', function (event) {gtag('event', 'click_track', {'event_category': 'click_track',
 									    'event_label': 'click_track','value': 1})}, false);
