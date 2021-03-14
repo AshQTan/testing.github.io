@@ -36,7 +36,7 @@
     <body style="margin:20px;padding:30px">
         <br>
         <div id = "pleaseread" style = "color: #24ad18; display: inline;">
-        2version You will be able to proceed to the game in 15 seconds. Please read all of the following before proceeding to the game.
+        3version You will be able to proceed to the game in 15 seconds. Please read all of the following before proceeding to the game.
         </div>
         <br>
         <br>
@@ -51,7 +51,7 @@
           In this game, you earn points by completing levels.  Once you reach a certain number of points, you unlock the ability to change the font of the game!  The more points you earn, the more fonts become available to you.  
           <br>
         </div>
-        <div id = "disclaimer" style = "color: #ff961f; display: none;">
+        <div id = "disclaimer" style = "color: #ff961f; display: inline;">
           Keep in mind that this point system is designed to motivate you to play the game longer and increase engagement.  Have fun! 
           <br>
         </div>
@@ -64,16 +64,16 @@
     <script>
         document.getElementById("button").style.display = "none";
 
-        if (gamelocation === "docs/1.html")
+        if (gamelocation == "docs/1.html")
           document.getElementById("points").style.display = "none";
           document.getElementById("disclaimer").style.display = "none";
 
-        if (gamelocation === "docs/2.html")
+        if (gamelocation == "docs/2.html")
           document.getElementById("disclaimer").style.display = "inline";
           document.getElementById("points").style.display = "inline";
           
 
-        if (gamelocation === "docs/3.html")
+        if (gamelocation == "docs/3.html")
           document.getElementById("points").style.display = "inline";
           document.getElementById("disclaimer").style.display = "none";
 
