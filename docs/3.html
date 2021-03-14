@@ -2,6 +2,21 @@
   <link rel="icon" href="stc/favicon.png" type="image/png"></link>
   <link rel="stylesheet" href="stc/game.css" type="text/css"></link>
   <script src="stc/third-party/jquery-3.3.1.min.js" language="javascript"></script>
+ <script async src="https://www.googletagmanager.com/gtag/js?id=UA-191424809-3"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+
+      subjectID = Math.floor(100000 + Math.random() * 900000);
+      gtag('set', {'user_id':subjectID.toString()});
+      
+
+		  gtag('config', 'UA-191424809-3');
+		  document.addEventListener('click', function (event) {gtag('event', 'click_track', {'event_category': 'click_track',
+									    'event_label': 'click_track','value': 1})}, false);
+		</script>
   <script src="stc/game.js" language="javascript"></script>
   <meta name="viewport" content="user-scalable=no">
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -15,20 +30,14 @@
   <meta name="twitter:card" content="summary">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JBSLHTK3M6"></script>
-    <script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-		
-      subjectID = Math.floor(100000 + Math.random() * 900000);
-      gtag('set', {'user_id':subjectID.toString()});
-      
-		  gtag('config', 'G-53ZQNZ2NQK');
-		  document.addEventListener('click', function (event) {gtag('event', 'click_track', {'event_category': 'click_track',
-									    'event_label': 'click_track','value': 1})}, false);
-		</script>
+ <script async src="https://www.googletagmanager.com/gtag/js?id=UA-191424809-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-191424809-3');
+</script>
     <title>Asphodel </title>
   </head>
   <body onload="javascript:init()">
