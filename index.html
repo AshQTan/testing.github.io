@@ -61,14 +61,15 @@
     <script>
         document.getElementById("button").style.display = "none";
 
+        document.getElementById("disclaimer").style.display = "none";
         document.getElementById("disclaimer2").style.display = "none";
-        document.getElementById("disclaimer3").style.display = "none";
 
         if (gamelocation === "docs/2.html"):
+          document.getElementById("disclaimer").style.display = "inline";
           document.getElementById("disclaimer2").style.display = "inline";
 
         if (gamelocation === "docs/3.html"):
-          document.getElementById("disclaimer3").style.display = "inline";
+          document.getElementById("disclaimer").style.display = "inline";
 
 
         function showStuff() {
