@@ -17,13 +17,14 @@
 <!--         <meta http-equiv="refresh" content="1;docs/1.html">
  -->
         <script type="text/javascript">
+        gamelocation = "docs/1.html";
         if ( Math.random() <= 0.5 ) //proper parenthesis surrounding the condition and also < will come before =
           gamelocation = "docs/1.html";
           // window.location.href = "docs/1.html"; 
         else //semicolon removed from here
         	if (Math.random()<=0.5)
               gamelocation = "docs/2.html";
-              gamedescr = "In this game, you earn points by completing levels.  Once you reach a certain number of points, you unlock the ability to change the font of the game!  The more points you earn, the more fonts become available to you.  Keep in mind that this point system is designed to motivate you to play the game longer and increase engagement.  Have fun!"
+              gamedescr = "In this game, you earn points by completing levels.  Once you reach a certain number of points, you unlock the ability to change the font of the game!  The more points you earn, the more fonts become available to you.  Keep in mind that this point system is designed to motivate you to play the game longer and increase engagement.  Have fun!";
           		// window.location.href = "docs/2.html";
           	else
               gamelocation = "docs/3.html";
@@ -40,10 +41,10 @@
         <br>
 
     <script>
-        document.getElementById("some-button").style.display = "none";
+        document.getElementById("button").style.display = "none";
 
         function showStuff() {
-            document.getElementById("some-button").style.display = "inline";
+            document.getElementById("button").style.display = "inline";
         }
 
         function myFunction() {
