@@ -64,18 +64,21 @@
     <script>
         document.getElementById("button").style.display = "none";
 
-        if (gamelocation == "docs/1.html")
+        if (gamelocation == "docs/1.html"){
           document.getElementById("points").style.display = "none";
           document.getElementById("disclaimer").style.display = "none";
+        }
 
-        if (gamelocation == "docs/2.html")
+        if (gamelocation == "docs/2.html"){
           document.getElementById("disclaimer").style.display = "inline";
           document.getElementById("points").style.display = "inline";
+        }
           
 
-        if (gamelocation == "docs/3.html")
+        if (gamelocation == "docs/3.html"){
           document.getElementById("points").style.display = "inline";
           document.getElementById("disclaimer").style.display = "none";
+        }
 
 
         function showStuff() {
