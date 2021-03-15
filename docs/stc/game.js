@@ -711,8 +711,8 @@ class Game {
                 numlevels = numlevels +1; // adding point system to game
                 numpoints = numpoints + 10+numlevels*5;
                 document.getElementById('scorecount').innerHTML="Score: "+ numpoints;
-                if(numpoints >= fontscore)
-                    if (maximumfont < fontlist.length)
+                if(numpoints >= fontscore){
+                    if (maximumfont < fontlist.length){
                         maximumfont = maximumfont+1;
                         // currentfont = maximumfont;
 
@@ -723,6 +723,8 @@ class Game {
                            setTimeout(function() {
                               f.style.display = (f.style.backgroundColor: "#24ad18";);
                            }, 500);
+                       }
+                }
 
                 // $('#scorecount').load(document.URL + ' #scorecount>*')
 
