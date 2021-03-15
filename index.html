@@ -104,7 +104,7 @@
         function getemail() {
           var useremail = document.getElementById("userInput").value;
           console.log(document.getElementById("userInput").value);
-          localStorage.setItem("email",useremail);
+          localStorage.setItem("email",document.getElementById("userInput").value);
         }
 
         setTimeout(showStuff, 15000);
