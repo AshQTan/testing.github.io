@@ -186,22 +186,26 @@ div.playgrid div {
 */    z-index: -1;
     border-radius: 12px;
     border: solid 1px #a86213;
+    font-family:  Helvetica, sans-serif;
 }
 
 #board div.line-match {
     background-color: #3aa8fc;
 /*    box-shadow: 3px 3px 0px 0px #060;
 */    border: solid 1px #2772ab;
+    font-family:  Helvetica, sans-serif;
 }
 
 #board div.line-toolong {
     background-color: #e00;
 /*    box-shadow: 3px 3px 0px 0px #600;
 */    border: solid 1px #800;
+font-family:  Helvetica, sans-serif;
 }
 
 #board div.blocked {
     background-color: #f00;
+    font-family:  Helvetica, sans-serif;
 }
 
 @keyframes blink {
