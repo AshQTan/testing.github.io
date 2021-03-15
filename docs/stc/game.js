@@ -721,8 +721,9 @@ class Game {
                         if(haspoints==true){
                             currentfont = maximumfont;
                             var f = document.getElementById('changefont');
+                            f.style.backgroundColor = "#24ad18";
                             setTimeout(function(){
-                                f.style.backgroundColor = "#24ad18";
+                                f.style.backgroundColor = "#ff961f";
                             }, 700);
                         }
                         // currentfont = maximumfont;
