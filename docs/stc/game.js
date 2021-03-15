@@ -11,7 +11,7 @@ var fontlist = ["Helvetica, sans-serif",
 "Stencil Std, fantasy",
 "Impact", 
 "Comic Sans MS, Comic Sans, cursive"]
-var currentfont = 1
+var currentfont = 0
 var maximumfont = fontlist.length-1
 
 class Line {
