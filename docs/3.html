@@ -12,7 +12,7 @@
       subjectID = Math.floor(100000 + Math.random() * 900000);
       // gtag('set', {'user_id':subjectID.toString()});
       var emailid = localStorage.getItem("email");
-      // localStorage.removeItem('email');
+      localStorage.removeItem('email');
       gtag('set', {'user_id':emailid});
       
 
@@ -115,10 +115,10 @@
 
         something.onclick = function() {
             if (currentfont == fontlist.length - 1){
-              currentfont = 0
+              currentfont = 0;
             } else {
               if (currentfont == maximumfont){
-                currentfont = 0
+                currentfont = 0;
               } else {
                 currentfont = currentfont+1
               }
@@ -127,25 +127,25 @@
             var buttonelements = document.getElementsByClassName('button');
 
             for (var i = 0; i < buttonelements.length; i++) {
-              var element = elements[i];
+              var element = buttonelements[i];
               element.style.fontFamily = fontlist[currentfont];
             }
 
             var lineelements = document.getElementsByClassName('line');
             for (var i = 0; i < lineelements.length; i++) {
-              var element = elements[i];
+              var element = lineelements[i];
               element.style.fontFamily = fontlist[currentfont];
             }
 
             var linematchelements = document.getElementsByClassName('line-match');
             for (var i = 0; i < linematchelements.length; i++) {
-              var element = elements[i];
+              var element = linematchelements[i];
               element.style.fontFamily = fontlist[currentfont];
             }
 
             var linetoolongelements = document.getElementsByClassName('line-toolong');
             for (var i = 0; i < linetoolongelements.length; i++) {
-              var element = elements[i];
+              var element = linetoolongelements[i];
               element.style.fontFamily = fontlist[currentfont];
             }
             // document.getElementById('bodyfont').style.fontFamily=fontlist[currentfont];
