@@ -6,9 +6,10 @@ var numlevels = 0;
 var fontlist = ["Helvetica, sans-serif",
 "American Typewriter, serif",
 "Andale Mono, monospace", 
-"Apple Chancery, cursive",
 "Stencil Std, fantasy",
 "Impact", 
+"Luminari, fantasy ",
+"Chalkduster, fantasy",
 "Comic Sans MS, Comic Sans, cursive",
 "Copperplate",
 "Snell Roundhand, cursive"]

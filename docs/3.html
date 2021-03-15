@@ -112,8 +112,8 @@
         // document.getElementById('bodyfont').style.fontFamily=fontlist[currentfont];
 
         var something = document.getElementById('changefont');
-        var buttonelements =  document.getElementsByClassName('button');
-        var lineelements = document.getElementsByClassName('line');
+        // var buttonelements =  document.getElementsByClassName('button');
+        // var lineelements = document.getElementsByClassName('line');
         var divelements = document.getElementsByTagName('DIV');
         something.style.cursor = 'pointer';
 
@@ -130,10 +130,10 @@
 
             // var buttonelements = document.getElementsByClassName('button');
 
-            for (var i = 0; i < buttonelements.length; i++) {
-              var element = buttonelements[i];
-              element.style.fontFamily = fontlist[currentfont];
-            }
+            // for (var i = 0; i < buttonelements.length; i++) {
+            //   var element = buttonelements[i];
+            //   element.style.fontFamily = fontlist[currentfont];
+            // }
 
             // var lineelements = document.getElementsByClassName('line');
             // for (var i = 0; i < lineelements.length; i++) {
@@ -169,16 +169,10 @@
             for (var i = 0; i < divelements.length; i++) {
               var element = divelements[i];
               element.style.fontFamily = fontlist[currentfont];
-              // element.style.fontDisplay = fontlist[currentfont];
-
             }
-            // document.getElementById('bodyfont').style.fontFamily=fontlist[currentfont];
+
             document.getElementById('changefont').style.fontFamily=fontlist[currentfont];
             document.getElementById('scorecount').style.fontFamily=fontlist[currentfont];
-            // document.getElementById('reset').style.fontFamily=fontlist[currentfont];
-            // document.getElementById('done').style.fontFamily=fontlist[currentfont];
-            // document.getElementById('back').style.fontFamily=fontlist[currentfont];
-
 
             console.log("font changed");
         };
