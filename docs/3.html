@@ -108,7 +108,7 @@
 
       <script>
         document.getElementById('scorecount').innerHTML="Score: "+ numpoints;
-        document.getElementById('bodyfont').style.fontFamily=fontlist[currentfont];
+        // document.getElementById('bodyfont').style.fontFamily=fontlist[currentfont];
 
         var something = document.getElementById('changefont');
         something.style.cursor = 'pointer';
@@ -123,8 +123,39 @@
                 currentfont = currentfont+1
               }
             }
-            document.getElementById('bodyfont').style.fontFamily=fontlist[currentfont];
+
+            var buttonelements = document.getElementsByClassName('button');
+
+            for (var i = 0; i < buttonelements.length; i++) {
+              var element = elements[i];
+              element.style.fontFamily = fontlist[currentfont];
+            }
+
+            var lineelements = document.getElementsByClassName('line');
+            for (var i = 0; i < lineelements.length; i++) {
+              var element = elements[i];
+              element.style.fontFamily = fontlist[currentfont];
+            }
+
+            var linematchelements = document.getElementsByClassName('line-match');
+            for (var i = 0; i < linematchelements.length; i++) {
+              var element = elements[i];
+              element.style.fontFamily = fontlist[currentfont];
+            }
+
+            var linetoolongelements = document.getElementsByClassName('line-toolong');
+            for (var i = 0; i < linetoolongelements.length; i++) {
+              var element = elements[i];
+              element.style.fontFamily = fontlist[currentfont];
+            }
+            // document.getElementById('bodyfont').style.fontFamily=fontlist[currentfont];
             document.getElementById('changefont').style.fontFamily=fontlist[currentfont];
+            // document.getElementById('scorecount').style.fontFamily=fontlist[currentfont];
+            // document.getElementById('reset').style.fontFamily=fontlist[currentfont];
+            // document.getElementById('done').style.fontFamily=fontlist[currentfont];
+            // document.getElementById('back').style.fontFamily=fontlist[currentfont];
+
+
             console.log("font changed");
         };
         something.onmouseover = function() {
