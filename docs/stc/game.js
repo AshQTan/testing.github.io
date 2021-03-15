@@ -716,13 +716,13 @@ class Game {
                         maximumfont = maximumfont+1;
                         // currentfont = maximumfont;
 
-                        var f = document.getElementById('changefont');
-                           setTimeout(function() {
-                              f.style.display = (f.style.backgroundColor: "#24ad18";);
-                           }, 500);
-                           setTimeout(function() {
-                              f.style.display = (f.style.backgroundColor: "#24ad18";);
-                           }, 500);
+                        // var f = document.getElementById('changefont');
+                        //    setTimeout(function() {
+                        //       f.style.display = (f.style.backgroundColor: "#24ad18";);
+                        //    }, 500);
+                        //    setTimeout(function() {
+                        //       f.style.display = (f.style.backgroundColor: "#24ad18";);
+                        //    }, 500);
                        }
                 }
 
