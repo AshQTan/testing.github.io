@@ -3,6 +3,16 @@
 var cellSize = 50;
 var numpoints = 0;
 var numlevels = 0;
+var fontlist = ["Helvetica, sans-serif",
+"Optima, sans-serif", 
+"American Typewriter, serif",
+"Andale Mono, monospace", 
+"Apple Chancery, cursive",
+"Stencil Std, fantasy",
+"Impact", 
+"Comic Sans MS, Comic Sans, cursive"]
+var currentfont = 0
+var maximumfont = fontlist.length-1
 
 class Line {
     constructor(targetLength, r, c) {
@@ -697,8 +707,10 @@ class Game {
                 game.incrementStartLevel(game.gameId);
 
                 numlevels = numlevels +1 // adding point system to game
-                numpoints = numpoints + numlevels*10
+                numpoints = numpoints + 10+numlevels*5
                 document.getElementById('scorecount').innerHTML="Score: "+ numpoints;
+
+
                 // $('#scorecount').load(document.URL + ' #scorecount>*')
 
                 game.startGame(game.gameId.next());
