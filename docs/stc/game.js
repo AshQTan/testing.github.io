@@ -16,6 +16,8 @@ var fontlist = ["Helvetica, sans-serif",
 var currentfont = 0;
 var maximumfont = 2;
 var fontscore = 40;
+var haspoints = false;
+
 class Line {
     constructor(targetLength, r, c) {
         this.targetLength = targetLength;
@@ -714,6 +716,9 @@ class Game {
                 if(numpoints >= fontscore){
                     if (maximumfont < fontlist.length){
                         maximumfont = maximumfont+1;
+                        if(haspoints==true){
+                            currentfont = maximumfont;
+                        }
                         // currentfont = maximumfont;
 
                         // var f = document.getElementById('changefont');
