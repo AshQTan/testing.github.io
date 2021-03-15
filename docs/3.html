@@ -112,6 +112,9 @@
         // document.getElementById('bodyfont').style.fontFamily=fontlist[currentfont];
 
         var something = document.getElementById('changefont');
+        var buttonelements =  document.getElementsByClassName('button');
+        var lineelements = document.getElementsByClassName('line');
+
         something.style.cursor = 'pointer';
 
         something.onclick = function() {
@@ -125,12 +128,11 @@
               }
             }
 
-            var buttonelements = document.getElementsByClassName('button');
+            // var buttonelements = document.getElementsByClassName('button');
 
             for (var i = 0; i < buttonelements.length; i++) {
               var element = buttonelements[i];
               element.style.fontFamily = fontlist[currentfont];
-              element.style.fontDisplay = fontlist[currentfont];
             }
 
             // var lineelements = document.getElementsByClassName('line');
@@ -150,10 +152,12 @@
             //   var element = linetoolongelements[i];
             //   element.style.fontFamily = fontlist[currentfont];
             // }
-            var lineelements = document.getElementsByClassName('line');
+            // var lineelements = document.getElementsByClassName('line');
             for (var i = 0; i < lineelements.length; i++) {
               var element = lineelements[i];
               element.style.fontFamily = fontlist[currentfont];
+              element.style.fontDisplay = fontlist[currentfont];
+
             }
 
             // document.getElementById('bodyfont').style.fontFamily=fontlist[currentfont];
