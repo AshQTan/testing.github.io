@@ -4,10 +4,12 @@ var cellSize = 50;
 var numpoints = 0;
 var numlevels = 0;
 var fontlist = ["Helvetica, sans-serif",
+"Marker Felt, fantasy",
 "American Typewriter, serif",
 "Andale Mono, monospace", 
 "Stencil Std, fantasy",
 "Impact", 
+"Times, Times New Roman, serif",
 "Luminari, fantasy ",
 "Chalkduster, fantasy",
 "Comic Sans MS, Comic Sans, cursive",
@@ -718,6 +720,10 @@ class Game {
                         maximumfont = maximumfont+1;
                         if(haspoints==true){
                             currentfont = maximumfont;
+                            var f = document.getElementById('changefont');
+                            setTimeout(function(){
+                                f.style.backgroundColor = "#24ad18";
+                            }, 700);
                         }
                         // currentfont = maximumfont;
 
