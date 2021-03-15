@@ -12,10 +12,10 @@ var fontlist = ["Helvetica, sans-serif",
 "Chalkduster, fantasy",
 "Comic Sans MS, Comic Sans, cursive",
 "Copperplate",
-"Snell Roundhand, cursive"]
-var currentfont = 0
-var maximumfont = fontlist.length
-
+"Snell Roundhand, cursive"];
+var currentfont = 0;
+var maximumfont = 2;
+var fontscore = 40;
 class Line {
     constructor(targetLength, r, c) {
         this.targetLength = targetLength;
@@ -708,10 +708,21 @@ class Game {
             } else if (game.grid.check()) {
                 game.incrementStartLevel(game.gameId);
 
-                numlevels = numlevels +1 // adding point system to game
-                numpoints = numpoints + 10+numlevels*5
+                numlevels = numlevels +1; // adding point system to game
+                numpoints = numpoints + 10+numlevels*5;
                 document.getElementById('scorecount').innerHTML="Score: "+ numpoints;
+                if(numpoints >= fontscore):
+                    if (maximumfont < fontlist.length):
+                        maximumfont = maximumfont+1;
+                        // currentfont = maximumfont;
 
+                        var f = document.getElementById('changefont');
+                           setTimeout(function() {
+                              f.style.display = (f.style.backgroundColor: "#24ad18";);
+                           }, 500);
+                           setTimeout(function() {
+                              f.style.display = (f.style.backgroundColor: "#24ad18";);
+                           }, 500);
 
                 // $('#scorecount').load(document.URL + ' #scorecount>*')
 
