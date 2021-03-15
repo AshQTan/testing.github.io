@@ -721,6 +721,7 @@ class Game {
                         if(haspoints==true){
                             currentfont = maximumfont;
                             var f = document.getElementById('changefont');
+                            f.innerHTML="Change font!  Fonts available: "+ maximumfont;
                             f.style.backgroundColor = "#24ad18";
                             setTimeout(function(){
                                 f.style.backgroundColor = "#ff961f";
