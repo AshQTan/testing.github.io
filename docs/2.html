@@ -8,8 +8,11 @@
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
 
-      subjectID = Math.floor(100000 + Math.random() * 900000);
-		  gtag('set', {'user_id':subjectID.toString()});
+    //   subjectID = Math.floor(100000 + Math.random() * 900000);
+		  // gtag('set', {'user_id':subjectID.toString()});
+      var emailid = localStorage.getItem("email");
+      localStorage.removeItem('email');
+      gtag('set', {'user_id':emailid});
 
 		  gtag('config', 'UA-191424809-2');
 		  document.addEventListener('click', function (event) {gtag('event', 'click_track', {'event_category': 'click_track',
@@ -105,6 +108,42 @@
 
       <script>
         document.getElementById('scorecount').innerHTML="Score: "+ numpoints;
+
+        document.getElementById('changefont').innerHTML="Change font!  Fonts available: "+ maximumfont;
+
+        var something = document.getElementById('changefont');
+
+        var divelements = document.getElementsByTagName('DIV');
+
+        something.style.cursor = 'pointer';
+
+        something.onclick = function() {
+            if (currentfont == fontlist.length - 1){
+              currentfont = 0;
+            } else {
+              if (currentfont == maximumfont){
+                currentfont = 0;
+              } else {
+                currentfont = currentfont+1
+              }
+            }
+
+            for (var i = 0; i < divelements.length; i++) {
+              var element = divelements[i];
+              element.style.fontFamily = fontlist[currentfont];
+            }
+
+            document.getElementById('changefont').style.fontFamily=fontlist[currentfont];
+            document.getElementById('scorecount').style.fontFamily=fontlist[currentfont];
+
+            console.log("font changed");
+        };
+        something.onmouseover = function() {
+            this.style.backgroundColor = "#f7b365";
+        };
+        something.onmouseout = function() {
+            this.style.backgroundColor = "#ff961f";
+        };
       </script>
 
 
