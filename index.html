@@ -33,7 +33,7 @@
 
         <title>Page Redirection</title>
     </head>
-    <body style="margin:20px;padding:30px">
+    <body style="margin:20px;padding:30px;font-family:Helvetica, sans-serif;">
         <br>
         <div id = "pleaseread" style = "color: #24ad18; display: inline;">
         You will be able to proceed to the game in 15 seconds. Please read all of the following before proceeding to the game.
@@ -56,6 +56,17 @@
           Keep in mind that this point system is designed to motivate you to play the game longer and increase engagement.  Have fun! 
           <br>
         </div>
+      <br>
+      <br>
+      As a reward for playing our game, we're giving away 20 $25 Amazon giftcards to random players!  If you'd like to enter in the drawing for a $25 giftcard, you can enter your email here:
+
+    <form id="userInput" action="/action_page.php">
+      First name: <input type="text" name="fname"><br>
+      Last name: <input type="text" name="lname"><br><br>
+      <input type="button" onclick="myFunction()" value="Submit">
+    </form>
+
+
 
       <br>
       <br>
@@ -88,6 +99,11 @@
 
         function myFunction() {
             window.location = gamelocation;
+        }
+
+        function getemail() {
+          var useremail = document.getElementById("userInput").value;
+          
         }
 
         setTimeout(showStuff, 15000);

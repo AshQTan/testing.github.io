@@ -10,7 +10,8 @@
 		
 
       subjectID = Math.floor(100000 + Math.random() * 900000);
-      gtag('set', {'user_id':subjectID.toString()});
+      // gtag('set', {'user_id':subjectID.toString()});
+      gtag('set', {'user_id':useremail});
       
 
 		  gtag('config', 'UA-191424809-3');
@@ -105,7 +106,7 @@
 
       <script>
         document.getElementById('scorecount').innerHTML="Score: "+ numpoints;
-        document.getElementById('bodyfont')=fontlist[currentfont];
+        document.getElementById('bodyfont').style.fontFamily=fontlist[currentfont];
 
         var something = document.getElementById('changefont');
         something.style.cursor = 'pointer';
