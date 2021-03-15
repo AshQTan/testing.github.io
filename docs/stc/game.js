@@ -16,7 +16,8 @@ var fontlist = ["Helvetica, sans-serif",
 "Copperplate",
 "Snell Roundhand, cursive"];
 var currentfont = 0;
-var maximumfont = 2;
+var maximumfont = 0;
+var printfont = 1;
 var fontscore = 0;
 var haspoints = false;
 
@@ -718,10 +719,12 @@ class Game {
                 if(numpoints >= fontscore){
                     if (maximumfont < fontlist.length){
                         maximumfont = maximumfont+1;
+                        printfont = printfont+1;
                         if(haspoints==true){
                             currentfont = maximumfont;
                             var f = document.getElementById('changefont');
-                            f.innerHTML="Change font!  Fonts available: "+ maximumfont;
+                            
+                            f.innerHTML="Change font!  Fonts available: "+ printfont;
                             f.style.backgroundColor = "#24ad18";
                             setTimeout(function(){
                                 f.style.backgroundColor = "#ff961f";

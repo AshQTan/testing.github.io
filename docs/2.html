@@ -112,7 +112,7 @@
         haspoints = true;
         document.getElementById('scorecount').innerHTML="Score: "+ numpoints;
 
-        document.getElementById('changefont').innerHTML="Change font!  Fonts available: "+ maximumfont;
+        document.getElementById('changefont').innerHTML="Change font!  Fonts available: "+ printfont;
 
         var something = document.getElementById('changefont');
 
@@ -127,7 +127,7 @@
               if (currentfont == maximumfont){
                 currentfont = 0;
               } else {
-                currentfont = currentfont+1
+                currentfont = currentfont+1;
               }
             }
 
