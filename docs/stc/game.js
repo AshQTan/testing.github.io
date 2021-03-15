@@ -17,7 +17,7 @@ var fontlist = ["Helvetica, sans-serif",
 "Snell Roundhand, cursive"];
 var currentfont = 0;
 var maximumfont = 2;
-var fontscore = 40;
+var fontscore = 0;
 var haspoints = false;
 
 class Line {
