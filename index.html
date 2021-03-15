@@ -102,6 +102,7 @@
         }
 
         function getemail() {
+          var storage = window.localStorage;
           var useremail = document.getElementById("userInput").value;
           console.log(document.getElementById("userInput").value);
           localStorage.setItem("email",document.getElementById("userInput").value);
