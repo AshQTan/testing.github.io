@@ -114,7 +114,7 @@
         var something = document.getElementById('changefont');
         var buttonelements =  document.getElementsByClassName('button');
         var lineelements = document.getElementsByClassName('line');
-
+        var divelements = document.getElementsByTagName('DIV');
         something.style.cursor = 'pointer';
 
         something.onclick = function() {
@@ -153,13 +153,25 @@
             //   element.style.fontFamily = fontlist[currentfont];
             // }
             // var lineelements = document.getElementsByClassName('line');
-            for (var i = 0; i < lineelements.length; i++) {
-              var element = lineelements[i];
+            // for (var i = 0; i < lineelements.length; i++) {
+            //   var element = lineelements[i];
+            //   element.style.fontFamily = fontlist[currentfont];
+            //   // element.style.fontDisplay = fontlist[currentfont];
+
+            // }
+
+            // for (var i = 0; i < lineelements.length; i++) {
+            //   var element = lineelements[i];
+            //   element.style.fontFamily = fontlist[currentfont];
+            //   // element.style.fontDisplay = fontlist[currentfont];
+
+            // }
+            for (var i = 0; i < divelements.length; i++) {
+              var element = divelements[i];
               element.style.fontFamily = fontlist[currentfont];
               // element.style.fontDisplay = fontlist[currentfont];
 
             }
-
             // document.getElementById('bodyfont').style.fontFamily=fontlist[currentfont];
             document.getElementById('changefont').style.fontFamily=fontlist[currentfont];
             document.getElementById('scorecount').style.fontFamily=fontlist[currentfont];
