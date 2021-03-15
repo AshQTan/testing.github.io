@@ -11,7 +11,8 @@
 
       subjectID = Math.floor(100000 + Math.random() * 900000);
       // gtag('set', {'user_id':subjectID.toString()});
-      emailid = localStorage.getItem("storageName")
+      var emailid = localStorage.getItem("email");
+      localStorage.removeItem('email');
       gtag('set', {'user_id':emailid});
       
 
@@ -123,7 +124,7 @@
               }
             }
             document.getElementById('bodyfont').style.fontFamily=fontlist[currentfont];
-            document.getElementById('button').style.fontFamily=fontlist[currentfont];
+            document.getElementByClassName('button').style.fontFamily=fontlist[currentfont];
             console.log("font changed");
         };
         something.onmouseover = function() {
