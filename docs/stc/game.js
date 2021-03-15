@@ -4,15 +4,16 @@ var cellSize = 50;
 var numpoints = 0;
 var numlevels = 0;
 var fontlist = ["Helvetica, sans-serif",
-"Optima, sans-serif", 
 "American Typewriter, serif",
 "Andale Mono, monospace", 
 "Apple Chancery, cursive",
 "Stencil Std, fantasy",
 "Impact", 
-"Comic Sans MS, Comic Sans, cursive"]
+"Comic Sans MS, Comic Sans, cursive",
+"Copperplate",
+"Snell Roundhand, cursive"]
 var currentfont = 0
-var maximumfont = fontlist.length-1
+var maximumfont = fontlist.length
 
 class Line {
     constructor(targetLength, r, c) {

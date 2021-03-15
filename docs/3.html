@@ -108,6 +108,7 @@
 
       <script>
         document.getElementById('scorecount').innerHTML="Score: "+ numpoints;
+        document.getElementById('changefont').innerHTML="Change font!  Fonts available: "+ maximumfont;
         // document.getElementById('bodyfont').style.fontFamily=fontlist[currentfont];
 
         var something = document.getElementById('changefont');
@@ -129,6 +130,7 @@
             for (var i = 0; i < buttonelements.length; i++) {
               var element = buttonelements[i];
               element.style.fontFamily = fontlist[currentfont];
+              element.style.fontDisplay = fontlist[currentfont];
             }
 
             // var lineelements = document.getElementsByClassName('line');
