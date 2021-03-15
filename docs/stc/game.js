@@ -4,7 +4,7 @@ var cellSize = 50;
 var numpoints = 0;
 var numlevels = 0;
 var fontlist = ["Helvetica, sans-serif",
-"Marker Felt, fantasy",
+"Didot",
 "American Typewriter, serif",
 "Andale Mono, monospace", 
 "Stencil Std, fantasy",
@@ -14,9 +14,12 @@ var fontlist = ["Helvetica, sans-serif",
 "Chalkduster, fantasy",
 "Comic Sans MS, Comic Sans, cursive",
 "Copperplate",
+"Rockwell",
+"Marker Felt",
 "Snell Roundhand, cursive"];
 var currentfont = 0;
-var maximumfont = 0;
+// var maximumfont = 0;
+var maximumfont = fontlist.length;
 var printfont = 1;
 var fontscore = 0;
 var haspoints = false;
