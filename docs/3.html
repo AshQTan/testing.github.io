@@ -131,26 +131,32 @@
               element.style.fontFamily = fontlist[currentfont];
             }
 
-            var lineelements = document.getElementsByClassName('line');
+            // var lineelements = document.getElementsByClassName('line');
+            // for (var i = 0; i < lineelements.length; i++) {
+            //   var element = lineelements[i];
+            //   element.style.fontFamily = fontlist[currentfont];
+            // }
+
+            // var linematchelements = document.getElementsByClassName('line-match');
+            // for (var i = 0; i < linematchelements.length; i++) {
+            //   var element = linematchelements[i];
+            //   element.style.fontFamily = fontlist[currentfont];
+            // }
+
+            // var linetoolongelements = document.getElementsByClassName('line-toolong');
+            // for (var i = 0; i < linetoolongelements.length; i++) {
+            //   var element = linetoolongelements[i];
+            //   element.style.fontFamily = fontlist[currentfont];
+            // }
+            var lineelements = document.getElementsByClassName('playgrid');
             for (var i = 0; i < lineelements.length; i++) {
               var element = lineelements[i];
               element.style.fontFamily = fontlist[currentfont];
             }
 
-            var linematchelements = document.getElementsByClassName('line-match');
-            for (var i = 0; i < linematchelements.length; i++) {
-              var element = linematchelements[i];
-              element.style.fontFamily = fontlist[currentfont];
-            }
-
-            var linetoolongelements = document.getElementsByClassName('line-toolong');
-            for (var i = 0; i < linetoolongelements.length; i++) {
-              var element = linetoolongelements[i];
-              element.style.fontFamily = fontlist[currentfont];
-            }
             // document.getElementById('bodyfont').style.fontFamily=fontlist[currentfont];
             document.getElementById('changefont').style.fontFamily=fontlist[currentfont];
-            // document.getElementById('scorecount').style.fontFamily=fontlist[currentfont];
+            document.getElementById('scorecount').style.fontFamily=fontlist[currentfont];
             // document.getElementById('reset').style.fontFamily=fontlist[currentfont];
             // document.getElementById('done').style.fontFamily=fontlist[currentfont];
             // document.getElementById('back').style.fontFamily=fontlist[currentfont];
